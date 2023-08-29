@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Abia Map with LGA Summary</title>
+
+    <script src="http://www.amcharts.com/lib/4/core.js"></script>
+    <script src="http://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="http://www.amcharts.com/lib/4/themes/dark.js"></script>
+    <script src="http://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <script src="/frontend/assets/js/abia_summary_map.js"></script>
+
+    <script src="/frontend/assets/deps/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/frontend/assets/deps/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/frontend/assets/deps/datatables/js/dataTables.select.min.js"></script>
+
+    <link rel="stylesheet" media="all" href="/frontend/assets/deps/datatables/css/select.dataTables.min.css" />
+    <link rel="stylesheet" media="all" href="/frontend/assets/css/Theme/dark.css" />
+
+    <link rel="stylesheet" href="/frontend/assets/css/bootstrap.min.css" />
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 41%;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+
+        #chartdiv{
+            margin-right: -300px;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="flexbox">
+
+        <div id="chartdiv"></div>
+
+        <div class="fixed m-2">
+            <h2 class="text-light mb-0" id="lga_name">Abia LGA</h2>
+            <table class="card text-dark table-bordered table-dark" id="summaryTable">
+                <tr>
+                    <th>Reporting Facilities:</th>
+                    <td id="facilitiesReported">0.0</td>
+                </tr>
+                <tr>
+                    <th>Tx_new:</th>
+                    <td id="tx_new">0.0</td>
+                </tr>
+                <tr>
+                    <th>OnART:</th>
+                    <td id="tx_curr">0.0</td>
+                </tr>
+                <tr>
+                    <th>Eligible for Viral Load:</th>
+                    <td id="vlEligible">0.0</td>
+                </tr>
+                <tr>
+                    <th>Sample Collected:</th>
+                    <td id="sampleCollected">0.0</td>
+                </tr>
+                <tr>
+                    <th>Tx_PVLS:</th>
+                    <td id="tx_vls">0.0</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- <div id="chartdiv"></div> -->
+        <div id="chartdivmsg" class="center-content"></div>
+
+
+
+        <a style="display: none;" class="btn btn-primary" id="ABI-ABN" onclick="selectCountry('ABI-ABN')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-ABS" onclick="selectCountry('ABI-ABS')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-ARC" onclick="selectCountry('ABI-ARC')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-BEN" onclick="selectCountry('ABI-BEN')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-IKW" onclick="selectCountry('ABI-IKW')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-ISN" onclick="selectCountry('ABI-ISN')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-ISS" onclick="selectCountry('ABI-ISS')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-ISU" onclick="selectCountry('ABI-ISU')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-OBI" onclick="selectCountry('ABI-OBI')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-OHA" onclick="selectCountry('ABI-OHA')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-OSI" onclick="selectCountry('ABI-OSI')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-UGW" onclick="selectCountry('ABI-UGW')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-UKE" onclick="selectCountry('ABI-UKE')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-UKW" onclick="selectCountry('ABI-UKW')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-UMN" onclick="selectCountry('ABI-UMN')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-UMS" onclick="selectCountry('ABI-UMS')">Abia State</a>
+        <a style="display: none;" class="btn btn-primary" id="ABI-UMU" onclick="selectCountry('ABI-UMU')">Abia State</a>
+
+    </div>
+</body>
+
+</html>

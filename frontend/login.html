@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Surge - Login</title>
+  <meta name="description" content="Nigeria Surge Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/segoe.css">
+  <link rel="stylesheet" href="assets/css/surge.css">
+
+  <style>
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 600px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Login</h2>
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Password</label>
+          <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp"
+            placeholder="Enter Password">
+        </div>
+
+        <br>
+        <div class="col-md-12 text-center ">
+          <button type="button" onclick="setIt()" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jQuery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    function setIt() {
+      var typedPassword = $('#password').val();
+      $.ajax({
+        url: "assets/data/passwords.json",
+        success(data) {
+          data.forEach(element => {
+            if (element.password === typedPassword) {
+              document.cookie = "password=" + typedPassword + ";";
+              window.location.href = "index.html";
+            }
+            else {
+              alert("Contact admin for login credentials");
+            }
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

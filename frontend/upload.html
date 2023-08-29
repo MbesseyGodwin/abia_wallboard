@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Uploads</title>
+    <meta name="description" content="Nigeria Surge Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/segoe.css" />
+    <link rel="stylesheet" href="assets/css/upload.css" />
+    <script src="assets/js/jquery.js"> </script>
+    <script lang="javascript" src="assets/js/xlsx.full.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#fileUploader").change(function (evt) {
+                var selectedFile = evt.target.files[0];
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    var data = event.target.result;
+                    var workbook = XLSX.read(data, {
+                        type: 'binary'
+                    });
+                    workbook.SheetNames.forEach(function (sheetName) {
+                        var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+                        var json_object = JSON.stringify(XL_row_object);
+
+                        // Save JSON file locally
+                        var blob = new Blob([json_object], { type: 'application/json' });
+                        var fileName = selectedFile.name.replace(/\.[^/.]+$/, "") + '.json';
+                        var url = URL.createObjectURL(blob);
+
+                        var link = document.createElement('a');
+                        link.href = url;
+                        link.download = fileName;
+                        link.click();
+
+                        document.getElementById("jsonObject").innerHTML = "JSON saved as: " + fileName;
+                    })
+                };
+
+                reader.onerror = function (event) {
+                    console.error("File could not be read! Code " + event.target.error.code);
+                };
+
+                reader.readAsBinaryString(selectedFile);
+            });
+        });
+    </script>
+</head>
+
+<body style="background-color: black">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ABIA WALLBOARD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-lg-3 active">
+                    <a class="nav-link" href="upload.html">Uploads</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mt-5">
+        <form class="form">
+            <div class="row justify-content-center">
+                <div class="col-12 p-5 mx-3 my-5 bg-light rounded">
+                    <div class="custom-file">
+                        <input id="viralload" class="custom-file-input" type="file" name="" required="true">
+                        <label for="viralload" class="custom-file-label">select csv file</label>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-around">
+                        <div class="form-group">
+                            <label for="ndr-linelist" class="mr-3">NDR Linelist</label>
+                            <input type="radio" id="ndr-linelist" name="linelist" value="ndr">
+                        </div>
+                        <div class="form-group">
+                            <label for="state-server-linelist" class="mr-3">State Server Linelist</label>
+                            <input type="radio" id="state-server-linelist" name="linelist" value="state-server">
+                        </div>
+                        <div class="form-group">
+                            <label for="emr-linelist" class="mr-3">EMR Linelist</label>
+                            <input type="radio" id="emr-linelist" name="linelist" value="emr">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-block" type="submit">Upload Data</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="">
+            <div class="row justify-content-center">
+                <div class="col-12 pt-1 pb-5 pl-5 pr-5 mx-3 bg-light rounded">
+                    <h4 class="text-center text-capitalize">convert excel to json</h4>
+                    <div class="custom-file">
+                        <input type="file" id="fileUploader" name="fileUploader" accept=".xls, .xlsx" />
+                        <label for="fileUploader" class="custom-file-label">select file</label>
+                    </div>
+
+                    <div class="container-fluid bg-dark">
+                        <label id="jsonObject" class="text-light">output: </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/_.min.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/numeral.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/upload.js"></script>
+</body>
+
+</html>

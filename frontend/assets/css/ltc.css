@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Set the width of the body to the full viewport width */
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  .content {
+    width: 800px; /* Set the width of your content to a fixed value */
+    height: 600px; /* Set the height of your content to a fixed value */
+    border: 1px solid black; /* Optional: Add a border for visibility */
+    box-sizing: border-box; /* Ensure border size is included in width and height */
+  }
+  

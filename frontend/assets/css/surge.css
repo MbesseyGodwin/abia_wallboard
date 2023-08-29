@@ -1,0 +1,203 @@
+* {
+	font-family: "Segoe UI Regular"
+}
+
+div.container-fluid {
+	padding: auto 128px !important;
+}
+
+h3,
+h1,
+h2,
+td,
+th {
+	color: white
+}
+
+.page-title {
+	color: #ffffff;
+	align-self: start;
+	border-bottom: solid 5px #dedede;
+	letter-spacing: 1px;
+}
+
+.date-container {
+	text-align-last: justify;
+	border: #dedede 5px solid;
+}
+
+h1 {
+	font-family: "Segoe UI Bold";
+	font-size: 18em;
+}
+
+h1.int {
+	font-size: 10em;
+	text-align: center;
+	border-radius: 24px;
+}
+
+h2 {
+	font-family: "Segoe UI Bold";
+	font-size: 4em;
+}
+
+h3 {
+	text-transform: Uppercase;
+	font-family: "Segoe UI Bold";
+	border-bottom: solid 4px #dedede;
+	padding: 32px 0px 0px 0px;
+}
+
+/* #unidentified-clients {
+	text-transform: Uppercase;
+	font-family: "Segoe UI Bold";
+	border-bottom: solid 4px #dedede;
+	padding: 32px 0px 0px 0px;
+} */
+
+header {
+	padding: 16px;
+}
+
+td,
+th {
+	font-size: 2em;
+}
+
+#SpectrumEstimate {
+	margin-bottom: -160px;
+	margin-left: 60%;
+	font-size: 6rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+[data-states-countdown] div.col {
+	padding: 32px;
+}
+
+[data-pending] {
+	background: #dedede;
+	padding: 16px;
+	border-radius: 16px;
+}
+
+[data-state] {
+	white-space: nowrap;
+}
+
+.vl div.col {
+	background: #eee;
+	margin: 16px;
+	padding: 48px;
+	border-radius: 16px;
+	display: block;
+}
+
+.vl p {
+	text-align: right;
+	font-size: 3.5em;
+}
+
+.mdi-arrow-up-thick {
+	color: green;
+}
+
+.mdi-arrow-down-thick {
+	color: red;
+}
+
+
+#blink {
+	font-weight: bold;
+	transition: 1.5s;
+}
+
+.hide-content {
+	visibility: hidden;
+	font-size: 1px;
+}
+
+.item {
+	display: inline-block;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1400px;
+	}
+
+	#blink {
+		font-weight: bold;
+		transition: 1.5s;
+	}
+}
+
+
+
+@media (max-width: 1400px) {
+
+	.container {
+		max-width: 1000px;
+	}
+
+	.page-title {
+		font-size: 25px;
+	}
+
+	.date-container {
+		text-align-last: justify;
+		border: #dedede 5px solid;
+	}
+
+	#blink {
+		font-weight: bold;
+		transition: 1.5s;
+		font-size: 10rem;
+	}
+
+	#spectrum-achieved {
+		font-size: 4.5rem;
+	}
+
+	#SpectrumEstimate {
+		margin-bottom: -210px;
+		margin-right: 130px;
+		font-size: 4.5rem;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.container {
+		max-width: 1000px;
+	}
+
+	.page-title {
+		font-size: 2rem;
+	}
+
+	.date-container {
+		text-align-last: justify;
+		border: #dedede 5px solid;
+	}
+
+	#blink {
+		font-weight: bold;
+		transition: 1.5s;
+		font-size: 7rem;
+	}
+
+	#spectrum-achieved {
+		font-size: 4rem;
+	}
+
+	#SpectrumEstimate {
+		margin-bottom: -240px;
+		/* margin-left: 550px; */
+		font-size: 4rem;
+		font-weight: bold;
+	}
+}

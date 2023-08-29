@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Rivers Map with LGA Summary</title>
+  <script src="http://www.amcharts.com/lib/4/core.js"></script>
+  <script src="http://www.amcharts.com/lib/4/maps.js"></script>
+  <!-- <script src="../../deps/amcharts4/themes/dark.js"></script>-->
+  <!--<script src="../../deps/amcharts4/themes/animated.js"></script>-->
+  <script src="http://www.amcharts.com/lib/4/themes/dark.js"></script>
+  <script src="http://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <!--
+  <script src="/frontend/assets/deps/amchart/core.js"></script>
+  <script scr="/frontend/assets/deps/amchart/map.js"></script>
+  <script src="/frontend/assets/deps/amchart/themes/dark.js"></script>
+  <script src="/frontend/assets/deps/amchart/themes/animated.js"></script> -->
+   <!-- DataTables includes -->
+  <script src="/frontend/assets/deps/jquery/jquery-3.3.1.min.js"></script>
+  <script src="/frontend/assets/deps/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="/frontend/assets/deps/datatables/js/dataTables.select.min.js"></script>
+    <!--Custom Script-->
+  <script src="/frontend/assets/js/SummaryMap.js"></script>
+
+  <!-- DataTables includes -->
+ <!-- <script src="http://127.0.0.1:5501/deps/jquery/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" media="all" href="http://127.0.0.1:5501/deps/datatables/css/jquery.dataTables.min.css" /> -->
+  <link rel="stylesheet" media="all" href="/frontend/assets/deps/datatables/css/select.dataTables.min.css" />
+ <!-- <script src="http://127.0.0.1:5501/deps/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="http://127.0.0.1:5501/deps/datatables/js/dataTables.select.min.js"></script> -->
+
+ <!-- <script src="/frontend/assets/js/SummaryMap.js></script>-->
+ 
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" media="all" href="/frontend/assets/css/Theme/dark.css" />
+
+
+</head>
+
+<body>
+  <div class="flexbox">
+    <div id="chartdiv"></div>
+    <a style="display: none;" class="btn btn-primary" id="RIV-DG" onclick="selectCountry('RIV-DG')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-TA" onclick="selectCountry('RIV-TA')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-AK" onclick="selectCountry('RIV-AK')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OA" onclick="selectCountry('RIV-OA')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-BN" onclick="selectCountry('RIV-BN')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-KH" onclick="selectCountry('RIV-KH')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OK" onclick="selectCountry('RIV-OK')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-ET" onclick="selectCountry('RIV-ET')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-AO" onclick="selectCountry('RIV-AO')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-GK" onclick="selectCountry('RIV-GK')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OM" onclick="selectCountry('RIV-OM')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-AN" onclick="selectCountry('RIV-AN')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OG" onclick="selectCountry('RIV-OG')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OY" onclick="selectCountry('RIV-OY')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OP" onclick="selectCountry('RIV-OP')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-AE" onclick="selectCountry('RIV-AE')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-AW" onclick="selectCountry('RIV-AW')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-OB" onclick="selectCountry('RIV-OB')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-PH" onclick="selectCountry('RIV-PH')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-IK" onclick="selectCountry('RIV-IK')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-AS" onclick="selectCountry('RIV-AS')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-EL" onclick="selectCountry('RIV-EL')">Rivers State</a>
+    <a style="display: none;" class="btn btn-primary" id="RIV-EM" onclick="selectCountry('RIV-EM')">Rivers State</a>
+    
+  </div>  
+  <!-- Scripts -->
+ <!-- <script src="http://www.amcharts.com/lib/4/core.js"></script>-->
+ <!-- <script src="http://www.amcharts.com/lib/4/maps.js"></script>-->
+  
+  <!--<script src="http://www.amcharts.com/lib/4/themes/dark.js"></script>-->
+  
+ <!-- <script src="http://www.amcharts.com/lib/4/themes/animated.js"></script>-->
+</body>
+</html>

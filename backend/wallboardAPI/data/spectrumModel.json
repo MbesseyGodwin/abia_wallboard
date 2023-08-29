@@ -1,0 +1,88 @@
+[   
+    {  
+        "lga": "ab Aba North",
+        "tx_curr": 3765,
+        "tx_curr_expected": 4136
+    },
+    {
+        "lga": "ab Aba South",
+        "tx_curr": 4642,
+        "tx_curr_expected": 3871
+    },
+    {
+        "lga": "ab Arochukwu",
+        "tx_curr": 3287,
+        "tx_curr_expected": 3723
+    },
+    {
+        "lga": "ab Bende",
+        "tx_curr": 1211,
+        "tx_curr_expected": 2190
+    },
+    {
+        "lga": "ab Ikwuano",
+        "tx_curr": 67,
+        "tx_curr_expected": 5821
+    },
+    {
+        "lga": "ab Isiala-Ngwa North",
+        "tx_curr": 3724,
+        "tx_curr_expected": 3575
+    },
+    {
+        "lga": "ab Isiala-Ngwa South",
+        "tx_curr": 1316,
+        "tx_curr_expected": 3752
+    },
+    {
+        "lga": "ab Isuikwuato",
+        "tx_curr": 704,
+        "tx_curr_expected": 2696
+    },
+    {
+        "lga": "ab Obingwa",
+        "tx_curr": 3266,
+        "tx_curr_expected": 5791
+    },
+    {
+        "lga": "ab Ohafia",
+        "tx_curr": 4936,
+        "tx_curr_expected": 3132
+    },
+    {
+        "lga": "ab Osisioma Ngwa",
+        "tx_curr": 8853,
+        "tx_curr_expected": 3368
+    },
+    {
+        "lga": "ab Ugwunagbo",
+        "tx_curr": 353,
+        "tx_curr_expected": 4018
+    },
+    {
+        "lga": "ab Ukwa East",
+        "tx_curr": 1271,
+        "tx_curr_expected": 6175
+    },
+    {
+        "lga": "ab Ukwa West",
+        "tx_curr": 4227,
+        "tx_curr_expected": 3752
+        
+    },
+    {
+        "lga": "ab Umu Nneochi",
+        "tx_curr": 2010,
+        "tx_curr_expected": 3221
+    },
+    {
+        "lga": "ab Umuahia North",
+        "tx_curr": 5758,
+        "tx_curr_expected": 3043
+    },
+    {
+        "lga": "ab Umuahia South",
+        "tx_curr": 4313,
+        "tx_curr_expected": 3634
+    }
+]

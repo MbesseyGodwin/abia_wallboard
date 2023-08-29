@@ -1,0 +1,121 @@
+[
+   {
+      "lgacode":"AB-ABN",
+      "lganame":"ab Aba North",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-ABS",
+      "lganame":"ab Aba South",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-AR0",
+      "lganame":"ab Arochukwu",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-BEN",
+      "lganame":"ab Bende",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-IKN",
+      "lganame":"ab Ikwuano",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-INN",
+      "lganame":"ab Isiala-Ngwa North",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-INS",
+      "lganame":"ab Isiala-Ngwa South",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-ISU",
+      "lganame":"ab Isuikwuato",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-OBI",
+      "lganame":"ab Obingwa",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-OHA",
+      "lganame":"ab Ohafia",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-OSN",
+      "lganame":"ab Osisioma Ngwa",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-UGW",
+      "lganame":"ab Ugwunagbo",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-UKE",
+      "lganame":"ab Ukwa East",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-UKW",
+      "lganame":"ab Ukwa West",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-UNC",
+      "lganame":"ab Umu Nneochi",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-UMN",
+      "lganame":"ab Umuahia North",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   },
+   {
+      "lgacode":"AB-UMS",
+      "lganame":"ab Umuahia South",
+      "suppressed":1000,
+      "unsuppressed":1000,
+      "lowViramia":2000
+   }
+]

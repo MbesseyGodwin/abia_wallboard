@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>vl chart</title>
+  <meta name="description" content="Nigeria Surge Project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/css/colors.css" />
+  <link rel="stylesheet" href="assets/css/segoe.css" />
+  <link rel="stylesheet" href="assets/css/surge.css" />
+
+  <script src="./assets/js/amcharts/lib/core.js"></script>
+  <!-- Charts -->
+  <script src="./assets/js/amcharts/lib/charts.js"></script>
+  <!-- Maps -->
+  <script src="./assets/js/amcharts/lib/maps.js"></script>
+  <!-- Geodata -->
+  <script src="./assets/js/amcharts/geodata/worldlow.js"></script>
+</head>
+
+<body style="background-color: black;">
+
+  <style>
+    #chartdiv {
+      width: 100%;
+      height: 800px;
+    }
+  </style>
+
+  <!-- HTML -->
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="col-10 border text-center m-5">
+      <div class="row mt-3 mb-0 d-flex justify-content-sm-center justify-content-lg-between">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 mx-4 my-sm-2">
+          <div class="card text-light p-2 bg-primary">
+            <h2 class="text-center display-lg-1 display-md-3 display-sm-5" data-art>---,---</h2>
+            <h4 class="float-right text-right h4">on ART</h4>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 mx-4 my-sm-2">
+          <div class="card text-light p-2 bg-secondary">
+            <h2 class="text-center display-lg-1 display-md-3 display-sm-5" data-eligible>---,---</h2>
+            <h4 class="float-right text-right h4">VL Eligible</h4>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 mx-4 my-sm-2">
+          <div class="card text-light p-2 purple darken-3">
+            <h2 class="text-center display-lg-1 display-md-3 display-sm-5" data-percent-collected>--%</h2>
+            <h4 class="float-right text-right text-capitalize h4" data-sample-collected>---,--- Sample Collected
+            </h4>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-light" />
+
+      <div class="row d-flex justify-content-center mt-0">
+        <div class="col-lg-10 col-md-12 col-sm-12 p-lg-5 p-md-4 p-sm-4">
+          <div class="border-4 rounded">
+            <div id="chartdiv"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources from cdn-->
+  <!-- <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script> -->
+
+  <!-- Resources from cdn-->
+  <script src="assets/js/amcharts/lib/index.js"></script>
+  <script src="assets/js/amcharts/lib/xy.js"></script>
+  <script src="assets/js/amcharts/lib/percent.js"></script>
+  <script src="assets/js/amcharts/themes/Animated.js"></script>
+
+  <!-- Scripts -->
+  <script src="assets/js/jQuery.min.js"></script>
+  <script src="assets/js/_.min.js"></script>
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/js/numeral.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/chart.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/baseUrl.js"></script>
+  <script src="./assets/js/vlChart.js"></script>
+
+</body>
+
+</html>

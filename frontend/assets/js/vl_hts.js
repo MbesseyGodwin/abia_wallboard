@@ -1,0 +1,1 @@
+setTimeout("window.location='hts_testing.html'",400000)

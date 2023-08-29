@@ -1,0 +1,87 @@
+[
+    {
+        "lga": "ab Aba North",
+        "population": 141509,
+        "PLHIVSpectrumEstimate": 4136
+    },
+    {
+        "lga": "ab Aba South",
+        "population": 566089,
+        "PLHIVSpectrumEstimate": 3871
+    },
+    {
+        "lga": "ab Arochukwu",
+        "population": 224278,
+        "PLHIVSpectrumEstimate": 3723
+    },
+    {
+        "lga": "ab Bende",
+        "population": 255114,
+        "PLHIVSpectrumEstimate": 3221
+    },
+    {
+        "lga": "ab Ikwuano",
+        "population": 182637,
+        "PLHIVSpectrumEstimate": 5821
+    },
+    {
+        "lga": "ab Isiala-Ngwa North",
+        "population": 204074,
+        "PLHIVSpectrumEstimate": 3575
+    },
+    {
+        "lga": "ab Isiala-Ngwa South",
+        "population": 180983,
+        "PLHIVSpectrumEstimate": 3752
+    },
+    {
+        "lga": "ab Isuikwuato",
+        "population": 153360,
+        "PLHIVSpectrumEstimate": 3250
+    },
+    {
+        "lga": "ab Obingwa",
+        "population": 240907,
+        "PLHIVSpectrumEstimate": 5791
+    },
+    {
+        "lga": "ab Ohafia",
+        "population": 325794,
+        "PLHIVSpectrumEstimate": 3132
+    },
+    {
+        "lga": "ab Osisioma",
+        "population": 292254,
+        "PLHIVSpectrumEstimate": 3368
+    },
+    {
+        "lga": "ab Ugwunagbo",
+        "population": 113068,
+        "PLHIVSpectrumEstimate": 4018
+    },
+    {
+        "lga": "ab Ukwa East",
+        "population": 77002,
+        "PLHIVSpectrumEstimate": 6175
+    },
+    {
+        "lga": "ab Ukwa West",
+        "population": 115711,
+        "PLHIVSpectrumEstimate": 3752
+    },
+    {
+        "lga": "ab Umu Nneochi",
+        "population": 295526,
+        "PLHIVSpectrumEstimate": 3221
+    },
+    {
+        "lga": "ab Umuahia North",
+        "population": 184173,
+        "PLHIVSpectrumEstimate": 3043
+    },
+    {
+        "lga": "ab Umuahia South",
+        "population": 216041,
+        "PLHIVSpectrumEstimate": 3634
+    }
+]

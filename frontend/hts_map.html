@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Surge HTS: Dashboard</title>
+
+    <!-- amCharts includes -->
+    <!--
+    <script src="../../deps/amcharts4/core.js"></script>
+    <script src="../../deps/amcharts4/charts.js"></script>
+    <script src="../../deps/amcharts4/maps.js"></script> -->
+    
+
+    <script src="http://www.amcharts.com/lib/4/core.js"></script>
+    <script src="http://www.amcharts.com/lib/4/maps.js"></script>
+    <!-- <script src="../../deps/amcharts4/themes/dark.js"></script>-->
+    <!--<script src="../../deps/amcharts4/themes/animated.js"></script>-->
+    <script src="http://www.amcharts.com/lib/4/themes/dark.js"></script>
+    <script src="http://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+   
+    <!--<script src="http://www.amcharts.com/lib/4/charts.js"></script>-->
+    <!--<script src="//www.amcharts.com/lib/4/geodata/worldLow.js"></script>-->
+   
+    <!--
+    <script src="../../deps/amcharts4-geodata/usaLow.js"></script>
+    <script src="../../deps/amcharts4-geodata/data/states_us.js"></script> -->
+
+    <!-- DataTables includes -->
+    <script src="http://127.0.0.1:5501/deps/jquery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" media="all" href="http://127.0.0.1:5501/deps/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" media="all" href="http://127.0.0.1:5501/deps/datatables/css/select.dataTables.min.css" />
+    <script src="http://127.0.0.1:5501/deps/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="http://127.0.0.1:5501/deps/datatables/js/dataTables.select.min.js"></script>
+    <script src="/frontend/assets/js/river_map.js"></script>
+    <!--<script src="http://127.0.0.1:5500/map_with_lables.js"></script> -->
+
+    <!-- Data  -->
+   <!-- <script src="../../data/js/us_timeline.js"></script>
+    <script src="../../data/js/us_total_timeline.js"></script> -->
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" media="all" href="/frontend/assets/css/Theme/dark.css" />
+
+    <!-- Main app -->
+   <!-- <script src="app.js"></script>-->
+   
+  </head>
+  <body>
+    <div class="flexbox">
+      <div id="chartdiv"></div>
+      <div id="list">
+        <table id="areas" class="compact hover order-column row-border">
+          <thead>
+            <tr>
+              <th>LGA</th>
+              <th>HTS-TST</th>
+              <th>HTS-TST-POS</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

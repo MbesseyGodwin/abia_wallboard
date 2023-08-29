@@ -1,0 +1,8 @@
+#navbarNav{
+    place-content: center;
+}
+
+a{
+    font-weight: bold;
+    font-size: large;
+}

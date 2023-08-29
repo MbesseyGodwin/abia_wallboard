@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TX_NEW/TX_CURR</title>
+    <meta name="description" content="Nigeria Surge Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/segoe.css" />
+    <link rel="stylesheet" href="assets/css/surge.css" />
+    <style>
+      h3,
+      h1,
+      h2,
+      td,
+      th {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: black;">
+      <div class="container-fluid">
+          <div class="row" id="tx_new_trend">
+              <div class="col-8" style="margin:auto;">
+                <h3>Tx New Trend</h3>
+                <canvas class="mini_chart" id="trend"></canvas>
+                <canvas class="mini_chart" id="trend2" style="display: none"></canvas>
+              </div>
+              <div class="col-4">
+                <h3>Tx New In Current Week</h3>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th style="color: aqua;">LGA</th>
+                      <th style="color: aqua;">New/Exp</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody data-ticker></tbody>
+                </table>
+              </div>
+              
+            </div>
+            <div class="row" id="tx_curr_archeivement">
+                <div class="col-12">
+                    <canvas id="tx_curr_performance"></canvas>
+                </div>    
+            </div>
+        </div>
+    
+    <!-- </div> -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/_.min.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/numeral.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/chart.min.js"></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/baseUrl.js"></script>
+    <script src="assets/js/tx_new.js"></script>
+  </body>
+</html>

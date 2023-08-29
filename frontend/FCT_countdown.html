@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FCT Surge</title>
+    <meta name="description" content="Nigeria Surge Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/segoe.css" />
+    <link rel="stylesheet" href="assets/css/surge.css" />
+
+    <style>
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1400px;
+        }
+      }
+      h3, h1, h2, td, th{
+        color:white
+      }
+    </style>
+  </head>
+
+  <body style="background-color: black;">
+    <header></header>
+
+    <div class="container">
+      <h3 style="color: aqua"> Numbers to Reach In FCT </h3>
+      <h1 data-countdown>---,---</h1>
+
+      <h3>State Tx New Target Countdown</h3>
+      <div class="row" data-states-countdown>
+        <div class="col-lg-6"><h2 data-state>--</h2></div>
+        <div class="col-lg-3"><h2 data-pending style="color: black; background-color: #2ffff6b0">--</h2></div>
+        <div class="col-lg-3">
+          <h2>
+            <span data-percentage>-.-</span>%
+            <i class="mdi mdi-arrow-up-thick" id="arraw"></i>
+          </h2>
+        </div>
+      </div>
+<br>
+      <div class="row">
+        <div class="col">
+          <table class="table table-bordered" style="font-size: 0.75em">
+            <!-- <tr>
+            <th>Color Codes</th>
+            <td>State Priority Level</td>
+          </tr> -->
+            <tr>
+              <th style="color: aqua">Current Week's Percentage</th>
+              <td>
+                Tx New from October -<span id="dateEnd"></span> / Overall Target for State
+              </td>
+            </tr>
+            <tr>
+              <th style="color: aqua">Arrow</th>
+              <td>Current percentage compared to projected percentage</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/_.min.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/numeral.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/baseUrl.js"></script>
+    <script src="assets/js/FCT_countdown.js"></script>
+    <script>
+      var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
+      var date = new Date();
+      document.getElementById("dateEnd").innerHTML =
+        months[date.getMonth()] + " " + date.getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+setTimeout("window.location='vl.html'",400000)

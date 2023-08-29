@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Nasarawa Map with LGA Summary</title>
+  <script src="http://www.amcharts.com/lib/4/core.js"></script>
+  <script src="http://www.amcharts.com/lib/4/maps.js"></script>
+  <!-- <script src="../../deps/amcharts4/themes/dark.js"></script>-->
+  <!--<script src="../../deps/amcharts4/themes/animated.js"></script>-->
+  <script src="http://www.amcharts.com/lib/4/themes/dark.js"></script>
+  <script src="http://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <!--
+  <script src="/frontend/assets/deps/amchart/core.js"></script>
+  <script scr="/frontend/assets/deps/amchart/map.js"></script>
+  <script src="/frontend/assets/deps/amchart/themes/dark.js"></script>
+  <script src="/frontend/assets/deps/amchart/themes/animated.js"></script> -->
+   <!-- DataTables includes -->
+  <script src="/frontend/assets/deps/jquery/jquery-3.3.1.min.js"></script>
+  <script src="/frontend/assets/deps/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="/frontend/assets/deps/datatables/js/dataTables.select.min.js"></script>
+    <!--Custom Script-->
+  <script src="/frontend/assets/js/nasarawaMapSummary.js"></script>
+
+  <!-- DataTables includes -->
+ <!-- <script src="http://127.0.0.1:5501/deps/jquery/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" media="all" href="http://127.0.0.1:5501/deps/datatables/css/jquery.dataTables.min.css" /> -->
+  <link rel="stylesheet" media="all" href="/frontend/assets/deps/datatables/css/select.dataTables.min.css" />
+ <!-- <script src="http://127.0.0.1:5501/deps/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="http://127.0.0.1:5501/deps/datatables/js/dataTables.select.min.js"></script> -->
+
+ <!-- <script src="/frontend/assets/js/SummaryMap.js></script>-->
+ 
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" media="all" href="/frontend/assets/css/Theme/dark.css" />
+
+
+</head>
+
+<body>
+  <div class="flexbox">
+    <div id="chartdiv"></div>
+    <a style="display: none;" class="btn btn-primary" id="NAS-TT" onclick="selectCountry('NAS-TT')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-NE" onclick="selectCountry('NAS-NE')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-KE" onclick="selectCountry('NAS-KE')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-AW" onclick="selectCountry('NAS-AW')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-KF" onclick="selectCountry('NAS-KF')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-OB" onclick="selectCountry('NAS-OB')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-AK" onclick="selectCountry('NAS-AK')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-KA" onclick="selectCountry('NAS-KA')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-KK" onclick="selectCountry('NAS-KK')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-LA" onclick="selectCountry('NAS-LA')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-DO" onclick="selectCountry('NAS-DO')">Nasarawa State</a>
+    <a style="display: none;" class="btn btn-primary" id="NAS-WB" onclick="selectCountry('NAS-WB')">Nasarawa State</a>
+    
+    
+    
+  </div>  
+
+</body>
+
+</html>

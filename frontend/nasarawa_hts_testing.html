@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTS</title>
+  <meta name="description" content="Nigeria Surge Project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/css/colors.css" />
+  <link rel="stylesheet" href="assets/css/segoe.css" />
+  <link rel="stylesheet" href="assets/css/surge.css" />
+
+  <style>
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1400px;
+      }
+    }
+
+    h3,
+    h1,
+    h2,
+    td,
+    th {
+      color: white
+    }
+  </style>
+</head>
+
+<body style="background-color: black;">
+  <div class="container-fluid">
+    <div class="row" id="hts_chart">
+      <div class="col-12">
+        <canvas id="hts_by_modality"></canvas>
+      </div>
+    </div>
+
+    <div class="row" id="hts_yield_by_state">
+      <div class="col-12">
+        <canvas id="yield_by_state"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jQuery.min.js"></script>
+  <script src="assets/js/_.min.js"></script>
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/js/numeral.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/chart.min.js"></script>
+  <!-- Custom Scripts -->
+  <script src="assets/js/baseUrl.js"></script>
+  <script src="assets/js/NasarawaHtsTesting.js"></script>
+</body>
+</html>

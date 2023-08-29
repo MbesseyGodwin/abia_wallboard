@@ -1,0 +1,26 @@
+<style>
+	.container {
+		border: solid 2px red;
+		width: 90%;
+		padding: 4px;
+	}
+
+	.child {
+		margin: 4px;
+		width: 64px;
+		height: 64px;
+		background: red;
+		right: 0px;
+	}
+</style>
+
+<div class="container">
+	<div class="child"></div>	
+</div>
+
+<script src="assets/js/jQuery.min.js"></script>
+<script>
+jQuery(document).ready(function($){
+	$(".child").animate({width: 500});
+});
+</script>
