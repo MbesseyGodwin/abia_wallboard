@@ -2,7 +2,7 @@ jQuery(document).ready(($) => {
   const generateDataset = (data, index) => {
     const { label, ...weekData } = data[index];
     const filteredData = Object.values(weekData).filter((value) => value !== 0);
-    const backgroundColor = index === 0 ? 'rgba(255, 99, 132, 1)' : 'rgba(54, 162, 235, 1)';
+    const backgroundColor = index === 0 ? 'rgba(0, 242, 0, 1) ' : 'rgba(54, 162, 235, 1)';
 
     return {
       label: label,
