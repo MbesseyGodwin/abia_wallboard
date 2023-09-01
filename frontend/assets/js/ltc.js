@@ -36,7 +36,7 @@ jQuery(document).ready(($) => {
           }],
           yAxes: [{
             ticks: {
-              beginAtZero: false,
+              beginAtZero: true,
               fontColor: "#fff",
               fontSize: 24,
             }

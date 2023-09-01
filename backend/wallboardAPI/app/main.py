@@ -57,4 +57,6 @@ def get_quarter_pos_to_linkage():
 def get_abia_map():
     return api.read_abia_map()
 
-
+@app.get('/api/wallboard/GetRetention')
+def get_abia_retention():
+    return api.read_state_retention

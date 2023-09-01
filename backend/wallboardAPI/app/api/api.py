@@ -61,4 +61,6 @@ def read_quater_pos_to_linkage():
     return read_json_file('data/linkage.json')
 def read_abia_map():
     return read_json_file('data/abia_map_data.json')
+def read_state_retention():
+    return read_json_file('data/abia_retention.json')
 

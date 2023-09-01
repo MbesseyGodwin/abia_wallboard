@@ -118,8 +118,10 @@ let clicked = 0;
 // Simulate a click on map areas in a cyclic manner at intervals of 5 seconds (for now)
 setInterval(function () {
   const element = fields_ids[clicked];
-  document.getElementById(element).click(); // Simulate a click event
-  clicked = (clicked + 1) % fields_ids.length; // Move to the next element
+  // Simulate a click event
+  document.getElementById(element).click(); 
+  // Move to the next element
+  clicked = (clicked + 1) % fields_ids.length; 
 }, 5000);
 
 // Function to update the summary table with data from the selected map area
